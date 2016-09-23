@@ -3,3 +3,14 @@ body {
   color: #fff;
   background-color: #61122f;*/
 }
+#header-nav{
+	background-color: white;
+	border-radius: 0;
+	border:0;
+}
+#logo-img{
+	background:url('../images/ryokudo_logo2.png');
+	width: 270px;
+	height: 110px;
+	margin: 10x 15px 10px 0;
+}
