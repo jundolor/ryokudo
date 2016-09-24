@@ -7,6 +7,7 @@
 	<title></title>
 	<link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/glacial-indifference" type="text/css"/>
 </head>
 <body>
 	<header>
@@ -16,15 +17,60 @@
 					<a href="index.html" class="pull-left visible-md visible-lg">
 						<div id="logo-img" alt="Logo images"></div>
 					</a>
+
 					<div class="navbar-brand visible-xs visible-sm">
 						<a href="index.html">
 							<h1>Ryokuo: The Green Earth</h1>
 						</a>
 					</div>
+
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+			            <span class="sr-only">Toggle navigation</span>
+			            <span class="icon-bar"></span>
+			            <span class="icon-bar"></span>
+			            <span class="icon-bar"></span>
+			          </button>
+
 				</div>
+
+				<div id="collapsable-nav" class="collapse navbar-collapse">
+					<ul id="nav-list" class="nav navbar-nav navbar-right">
+						<li>
+							<a href="menu-categories.html">Home</a>
+						</li>
+						<li>
+							<a href="#">About</a>
+						</li>
+						<li>
+							<a href="#">Blog</a>
+						</li>
+						<li>
+							<a href="#">Gallery</a>
+						</li>
+
+
+
+						<li class="dropdown">
+				          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services <span class="caret"></span></a>
+				          <ul class="dropdown-menu">
+				            <li><a href="#">Converting to High Quality Compost</a></li>
+				            <li><a href="#">Materials from Thrash</a></li>
+				            <li><a href="#">RPF-Refuse Paper and Plastic Fuel</a></li>
+				            <li role="separator" class="divider"></li>
+				            <li><a href="#">Recycling Process</a></li>
+				          </ul>
+				        </li>
+
+						<li>
+							<a href="#">Contact Us</a>
+						</li>
+					</ul><!-- #nav-list -->
+				</div><!-- .collapse .navbar-collapse -->
+
 			</div>
 		</nav>
 	</header>
+	<div id="bottom-bar" class="container-fluid visible-md visible-lg"><div id="buttom-bar-right" class="row">&nbsp;</div></div>
 
 	<script src="js/jquery-2.1.4.min.js"></script>
   	<script src="js/bootstrap.min.js"></script>
