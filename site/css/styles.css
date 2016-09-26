@@ -6,6 +6,7 @@ body {
   font-weight: normal; 
   font-style: normal; 
   font-size: 1.5em;
+  color: #333333;
 }
 #header-nav{
 	background-color: white;
@@ -36,7 +37,6 @@ body {
   margin-top: 60px;
 }
 #nav-list a {
-  color: #333333;
   text-align: center;
   font-weight: bold;
   font-size: 1.1em;
@@ -70,24 +70,25 @@ body {
   clear: both;
   margin-top: -30px;
 }
+#main-content{
+  margin-top: 20px;
+}
+/* START HOME */
+/* Start Carousel */
 
-/* START CAROUSEL */
 #home-carousel{
   padding-right: 0;
   padding-left: 0;
 }
 #myCarousel{
-  margin-top: 20px;
   padding-right: 0;
   padding-left: 0;
 }
 #carousel-banner-1, #carousel-banner-2, #carousel-banner-3, #carousel-banner-4{
-	width:1370px;
-	height: 550px;
 	background: url('../images/homepage_banner.png') no-repeat;
+	background-position: center;
 }
 .carousel-text1, .carousel-text2{
-	font-size: 2.6em;
 	font-weight: normal;
 	color: white;
 	position: absolute;
@@ -106,45 +107,109 @@ body {
 }
 
 
-/* END CAROUSEL */
+/* End Carousel */
+
+/* start middle-content */
+#middle_content h1{
+	text-shadow: 2px 2px 1px #B8B8B8;
+	text-transform: uppercase;
+}
+#middle_content ol{
+	list-style-type: upper-alpha;
+}
+#middle_content .panel{
+	width: 80%;
+	height: 80%;
+	margin-top: 10px;
+}
+.video-container {
+	position:relative;
+	padding-bottom:56.25%;
+	padding-top:30px;
+	height:0;
+	overflow:hidden;
+}
+
+.video-container iframe, .video-container object, .video-container embed {
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:100%;
+}
+/* end middle-content */
+
+/* END HOME */
 
 /********** Large devices only **********/
 @media (min-width: 1200px) {
-
+	#carousel-banner-1, #carousel-banner-2, #carousel-banner-3, #carousel-banner-4{
+		width:1370px;
+		height: 550px;
+	}
+	.carousel-text1, .carousel-text2{
+		font-size: 2.6em;
+	}
 }
 
 /********** Medium devices only **********/
 @media (min-width: 992px) and (max-width: 1199px) {
-  /* Header */
-  #logo-img {
-    background: url('../images/ryokudo_logo_medium.png') no-repeat;
-    width: 196px;
-    height: 80px;
-    margin: 5px 5px 5px 0;
-  }
-  /* End Header */
+	#logo-img {
+		background: url('../images/ryokudo_logo_medium.png') no-repeat;
+		width: 196px;
+		height: 80px;
+		margin: 5px 5px 5px 0;
+	}
+	#carousel-banner-1, #carousel-banner-2, #carousel-banner-3, #carousel-banner-4{
+		width:1199px;
+		height: 481px;
+	}
+	.carousel-text1, .carousel-text2{
+		width: 25%;
+		font-size: 1.9em;
+	}
 }
 
 /********** Small devices only **********/
 @media (min-width: 768px) and (max-width: 991px) {
+	#nav-list{
+		margin-top: 5px;
+	}
 	#logo-img {
-    background: url('../images/ryokudo_logo_small.png') no-repeat;
-    width: 98px;
-    height: 40px;
-    margin: 5px 5px 5px 0;
-  }
+		background: url('../images/ryokudo_logo_small.png')no-repeat;
+		width: 98px;
+		height: 40px;
+		margin: 5px 5px 5px 0;
+	}
+
+	#carousel-banner-1, #carousel-banner-2, #carousel-banner-3, #carousel-banner-4{
+		width:991px;
+		height: 398px;
+	}
+	.carousel-text1, .carousel-text2{
+		width: 25%;
+		font-size: 1.7em;
+	}
 }
 
 /********** Extra small devices only **********/
 @media (max-width: 767px){
 	#logo-img {
-    background: url('../images/ryokudo_logo_small.png') no-repeat;
-    width: 98px;
-    height: 40px;
-    margin: 5px 5px 0px 0;
-  }
-  	#nav-list {
-  	margin-top: 10px;
+		background: url('../images/ryokudo_logo_small.png') no-repeat;
+		width: 98px;
+		height: 40px;
+		margin: 5px 5px 0px 0;
+	}
+	#nav-list {
+		margin-top: 10px;
 	}
 	.navbar-default .navbar-collapse{}
+	#carousel-banner-1, #carousel-banner-2, #carousel-banner-3, #carousel-banner-4{
+		width:767px;
+		height: 308px;
+	}
+	.carousel-text1, .carousel-text2{
+		width: 22%;
+		font-size: 1.5em;
+	}
 }
