@@ -215,4 +215,16 @@ body {
 		width: 22%;
 		font-size: 1.5em;
 	}
+
+	.carousel-text1{
+		top:60%;
+		left:10%;
+		width: 30%;
+	}
+	.carousel-text2{
+		top:10%;
+		left:70%;
+		width: 30%;
+	}
+	
 }
