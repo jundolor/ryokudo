@@ -194,6 +194,9 @@ body {
 
 /********** Extra small devices only **********/
 @media (max-width: 767px){
+	body{
+		font-size: 1em;
+	}
 	#logo-img {
 		background: url('../images/ryokudo_logo_small.png') no-repeat;
 		width: 98px;
