@@ -251,6 +251,9 @@ body {
 		width: 25%;
 		font-size: 1.7em;
 	}
+	#recycle_plastic_fuel, #products_from_waste{
+		margin-top: 20px;
+	}
 }
 
 /********** Extra small devices only **********/
@@ -286,6 +289,9 @@ body {
 		top:10%;
 		left:70%;
 		width: 30%;
+	}
+	#recycle_plastic_fuel, #products_from_waste{
+		margin-top: 20px;
 	}
 	
 }
