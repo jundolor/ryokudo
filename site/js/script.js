@@ -17,6 +17,8 @@ $(function () { // Same as document.addEventListener("DOMContentLoaded"...
   $("#navbarToggle").click(function (event) {
     $(event.target).focus();
   });
+
+  
 });
 
 (function (global) {
@@ -52,6 +54,7 @@ var insertProperty = function (string, propName, propValue) {
 // On page load (before images or CSS)
 document.addEventListener("DOMContentLoaded", function (event) {
 
+
 // On first load, show home view
 showLoading("#main-content");
 $ajaxUtils.sendGetRequest(
@@ -61,9 +64,12 @@ $ajaxUtils.sendGetRequest(
       .innerHTML = responseText;
   },
   false);
+
+  
 });
 
 
 global.$dc = dc;
 
 })(window);
+

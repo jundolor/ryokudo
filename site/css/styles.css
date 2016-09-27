@@ -121,6 +121,8 @@ body {
 	width: 80%;
 	height: 80%;
 	margin-top: 10px;
+	margin-left: auto;
+	margin-right: auto;
 }
 .video-container {
 	position:relative;
@@ -138,6 +140,65 @@ body {
 	height:100%;
 }
 /* end middle-content */
+/*start home-tiles */
+#home-tiles-inner{
+	width: 97%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#home-tiles-inner div {
+	overflow: hidden;
+	
+}
+
+#home-tiles-inner div h3{
+	text-transform: capitalize;
+	margin-top: 10px;
+	text-align: center;
+}
+
+#recycle_process, #recycle_plastic_fuel, #products_from_waste{
+	border: 1px solid #333;
+	box-shadow:  1px 1px 1px #222;
+}
+#recycle_process div.img_holder{
+	background: url('../images/recycle-01.png') no-repeat;
+}
+
+#recycle_plastic_fuel div.img_holder{
+	background: url('../images/rpf-01.png') no-repeat;
+}
+
+#products_from_waste div.img_holder{
+	background: url('../images/prod-01.png') no-repeat;
+}
+
+#recycle_process div.img_holder, #recycle_plastic_fuel div.img_holder, #products_from_waste div.img_holder{
+	background-position: center;
+	width:360px;
+	height: 174px;
+	padding: 0;
+	margin:0;
+	border:none;
+}
+
+.tile-content{
+	padding: 5px;
+	font-size: 0.9em;
+
+}
+.tile-link{
+	text-transform: uppercase;
+	font-size: 1.2em;
+	text-align: center;
+	
+}
+#recycle_process a, #recycle_plastic_fuel a, #products_from_waste a{
+	text-decoration: none;
+	color: #333;
+}
+/* end home-tiles */
 
 /* END HOME */
 
