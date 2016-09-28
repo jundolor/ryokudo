@@ -204,7 +204,7 @@ body {
 /* end home-tiles */
 
 /* start footer*/
-footer{
+footer#ry_footer{
 
 }
 /* end footer */
@@ -220,7 +220,7 @@ footer{
 	.carousel-text1, .carousel-text2{
 		font-size: 2.6em;
 	}
-	footer{
+	footer#ry_footer{
 		background: url('../images/footer.png') no-repeat;
 		width:1370px;
 		height: 408px;
@@ -247,7 +247,7 @@ footer{
 		width: 25%;
 		font-size: 1.9em;
 	}
-	footer{
+	footer#ry_footer{
 		background: url('../images/footer_md.png') no-repeat;
 		width:100%;
 		height: 357px;
@@ -280,7 +280,7 @@ footer{
 	#recycle_process, #recycle_plastic_fuel, #products_from_waste{
 		margin-top: 20px;
 	}
-	footer{
+	footer#ry_footer{
 		background: url('../images/footer_md.png') no-repeat;
 		width:100%;
 		height: 357px;
@@ -327,7 +327,7 @@ footer{
 	#recycle_process, #recycle_plastic_fuel, #products_from_waste{
 		margin-top: 20px;
 	}
-	footer{
+	footer#ry_footer{
 		background: url('../images/footer_md.png') no-repeat;
 		width:100%;
 		height: 150px;
