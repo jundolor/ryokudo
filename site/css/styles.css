@@ -98,7 +98,7 @@ body {
 .carousel-text1{
 	top:60%;
 	left:10%;
-	width: 30%;
+	width: 25%;
 }
 .carousel-text2{
 	top:10%;
@@ -164,14 +164,17 @@ body {
 }
 #recycle_process div.img_holder{
 	background: url('../images/recycle-01.png') no-repeat;
+	background-position: center;
 }
 
 #recycle_plastic_fuel div.img_holder{
 	background: url('../images/rpf-01.png') no-repeat;
+	background-position: center;
 }
 
 #products_from_waste div.img_holder{
 	background: url('../images/prod-01.png') no-repeat;
+	background-position: center;
 }
 
 #recycle_process div.img_holder, #recycle_plastic_fuel div.img_holder, #products_from_waste div.img_holder{
@@ -200,6 +203,14 @@ body {
 }
 /* end home-tiles */
 
+/* start footer*/
+footer{
+	background-position: center;
+	border:none;
+	background-color: white;
+}
+/* end footer */
+
 /* END HOME */
 
 /********** Large devices only **********/
@@ -211,6 +222,12 @@ body {
 	.carousel-text1, .carousel-text2{
 		font-size: 2.6em;
 	}
+	footer{
+		background: url('../images/footer.png') no-repeat;
+		width:1370px;
+		height: 408px;
+	}
+
 }
 
 /********** Medium devices only **********/
@@ -228,6 +245,11 @@ body {
 	.carousel-text1, .carousel-text2{
 		width: 25%;
 		font-size: 1.9em;
+	}
+	footer{
+		background: url('../images/footer_md.png') no-repeat;
+		width:100%;
+		height: 357px;
 	}
 }
 
@@ -251,8 +273,13 @@ body {
 		width: 25%;
 		font-size: 1.7em;
 	}
-	#recycle_plastic_fuel, #products_from_waste{
+	#recycle_process, #recycle_plastic_fuel, #products_from_waste{
 		margin-top: 20px;
+	}
+	footer{
+		background: url('../images/footer_md.png') no-repeat;
+		width:100%;
+		height: 357px;
 	}
 }
 
@@ -290,8 +317,12 @@ body {
 		left:70%;
 		width: 30%;
 	}
-	#recycle_plastic_fuel, #products_from_waste{
+	#recycle_process, #recycle_plastic_fuel, #products_from_waste{
 		margin-top: 20px;
 	}
-	
+	footer{
+		background: url('../images/footer_md.png') no-repeat;
+		width:100%;
+		height: 150px;
+	}
 }
