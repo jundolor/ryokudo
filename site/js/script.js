@@ -85,7 +85,7 @@ var recyle_process_switch = function(state){
     console.log('went in');
     console.log(document.querySelector("#recycle_process"));
     document.querySelector("#recycle_process h3").style.color = "#339900";
-    document.querySelector("#recycle_process > div").style.backgroundImage = "url('../images/recycle-02.png')";
+    document.querySelector("#recycle_process > div").style.backgroundImage = "url('https://jundolor.github.io/ryokudo/site/images/recycle-02.png')";
     document.querySelector("#recycle_process p").style.color = "#339900";
     document.querySelector("#recycle_process p a").style.color = "#339900";
     document.querySelector("#recycle_process").style.borderColor = "#339900";
@@ -93,7 +93,7 @@ var recyle_process_switch = function(state){
   else{
     console.log('went out');
     document.querySelector("#recycle_process h3").style.color = "#333333";
-    document.querySelector("#recycle_process > div").style.backgroundImage = "url('../images/recycle-01.png')";
+    document.querySelector("#recycle_process > div").style.backgroundImage = "url('https://jundolor.github.io/ryokudo/site/images/recycle-01.png')";
     document.querySelector("#recycle_process p").style.color = "#333333";
     document.querySelector("#recycle_process p a").style.color = "#333333";
     document.querySelector("#recycle_process").style.borderColor = "#333333";
@@ -105,7 +105,7 @@ var rpf_switch = function(state){
     console.log('went in');
     console.log(document.querySelector("#recycle_plastic_fuel"));
     document.querySelector("#recycle_plastic_fuel h3").style.color = "#339900";
-    document.querySelector("#recycle_plastic_fuel > div").style.backgroundImage = "url('../images/rpf-02.png')";
+    document.querySelector("#recycle_plastic_fuel > div").style.backgroundImage = "url('https://jundolor.github.io/ryokudo/site/images/rpf-02.png')";
     document.querySelector("#recycle_plastic_fuel p").style.color = "#339900";
     document.querySelector("#recycle_plastic_fuel p a").style.color = "#339900";
     document.querySelector("#recycle_plastic_fuel").style.borderColor = "#339900";
@@ -113,7 +113,7 @@ var rpf_switch = function(state){
   else{
     console.log('went out');
     document.querySelector("#recycle_plastic_fuel h3").style.color = "#333333";
-    document.querySelector("#recycle_plastic_fuel > div").style.backgroundImage = "url('../images/rpf-01.png')";
+    document.querySelector("#recycle_plastic_fuel > div").style.backgroundImage = "url('https://jundolor.github.io/ryokudo/site/images/rpf-01.png')";
     document.querySelector("#recycle_plastic_fuel p").style.color = "#333333";
     document.querySelector("#recycle_plastic_fuel p a").style.color = "#333333";
     document.querySelector("#recycle_plastic_fuel").style.borderColor = "#333333";
@@ -125,7 +125,7 @@ var pfw_switch = function(state){
     console.log('went in');
     console.log(document.querySelector("#products_from_waste"));
     document.querySelector("#products_from_waste h3").style.color = "#339900";
-    document.querySelector("#products_from_waste > div").style.backgroundImage = "url('../images/prod-02.png')";
+    document.querySelector("#products_from_waste > div").style.backgroundImage = "url('https://jundolor.github.io/ryokudo/site/images/prod-02.png')";
     document.querySelector("#products_from_waste p").style.color = "#339900";
     document.querySelector("#products_from_waste p a").style.color = "#339900";
     document.querySelector("#products_from_waste").style.borderColor = "#339900";
@@ -133,7 +133,7 @@ var pfw_switch = function(state){
   else{
     console.log('went out');
     document.querySelector("#products_from_waste h3").style.color = "#333333";
-    document.querySelector("#products_from_waste > div").style.backgroundImage = "url('../images/prod-01.png')";
+    document.querySelector("#products_from_waste > div").style.backgroundImage = "url('https://jundolor.github.io/ryokudo/site/images/prod-01.png')";
     document.querySelector("#products_from_waste p").style.color = "#333333";
     document.querySelector("#products_from_waste p a").style.color = "#333333";
     document.querySelector("#products_from_waste").style.borderColor = "#333333";
