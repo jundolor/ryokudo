@@ -210,6 +210,11 @@ footer#ry_footer{
 	background-color: white;
 
 }
+
+footer#ry_footer > div{
+	margin-top: 8%;
+	text-align: center;
+}
 /* end footer */
 
 /* END HOME */
