@@ -105,7 +105,7 @@ var rpf_switch = function(state){
     console.log('went in');
     console.log(document.querySelector("#recycle_plastic_fuel"));
     document.querySelector("#recycle_plastic_fuel h3").style.color = "#339900";
-    document.querySelector("#recycle_plastic_fuel > div").style.backgroundImage = "url('https://jundolor.github.io/ryokudo/site/images/rpf-02.png')";
+    document.querySelector("#recycle_plastic_fuel > div").style.backgroundImage = "url('https://jundolor.github.io/ryokudo/site/images/rpfuel_02.png')";
     document.querySelector("#recycle_plastic_fuel p").style.color = "#339900";
     document.querySelector("#recycle_plastic_fuel p a").style.color = "#339900";
     document.querySelector("#recycle_plastic_fuel").style.borderColor = "#339900";
@@ -113,7 +113,7 @@ var rpf_switch = function(state){
   else{
     console.log('went out');
     document.querySelector("#recycle_plastic_fuel h3").style.color = "#333333";
-    document.querySelector("#recycle_plastic_fuel > div").style.backgroundImage = "url('https://jundolor.github.io/ryokudo/site/images/rpf-01.png')";
+    document.querySelector("#recycle_plastic_fuel > div").style.backgroundImage = "url('https://jundolor.github.io/ryokudo/site/images/rpfuel_01.png')";
     document.querySelector("#recycle_plastic_fuel p").style.color = "#333333";
     document.querySelector("#recycle_plastic_fuel p a").style.color = "#333333";
     document.querySelector("#recycle_plastic_fuel").style.borderColor = "#333333";
