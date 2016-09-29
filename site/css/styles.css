@@ -20,6 +20,7 @@ body {
 	margin: 10x 15px 10px 0;
 }
 #bottom-bar{
+	width: 100px;
 	height:9px;
 	background-color: #888888;
 }
@@ -179,7 +180,7 @@ body {
 
 #recycle_process div.img_holder, #recycle_plastic_fuel div.img_holder, #products_from_waste div.img_holder{
 	background-position: center;
-	width:360px;
+	width:100%;/*360px;*/
 	height: 174px;
 	padding: 0;
 	margin:0;
@@ -205,14 +206,24 @@ body {
 
 /* start footer*/
 footer#ry_footer{
+	background-position: center;
+	border:none;
+	background-color: white;
 
 }
 /* end footer */
 
 /* END HOME */
 
+/********** Extra Large devices only **********/
+@media (min-width: 1371px){
+	#carousel-banner-1, #carousel-banner-2, #carousel-banner-3, #carousel-banner-4{
+		background:url('../images/homepage_banner_xlg.png') no-repeat;
+	}
+}
+
 /********** Large devices only **********/
-@media (min-width: 1200px) {
+@media (min-width: 1200px) and (max-width: 1370px) {
 	#carousel-banner-1, #carousel-banner-2, #carousel-banner-3, #carousel-banner-4{
 		width:1370px;
 		height: 550px;
@@ -224,9 +235,6 @@ footer#ry_footer{
 		background: url('../images/footer.png') no-repeat;
 		width:1370px;
 		height: 408px;
-			background-position: center;
-	border:none;
-	background-color: white;
 	}
 
 }
@@ -251,9 +259,6 @@ footer#ry_footer{
 		background: url('../images/footer_md.png') no-repeat;
 		width:100%;
 		height: 357px;
-			background-position: center;
-	border:none;
-	background-color: white;
 	}
 }
 
@@ -283,11 +288,7 @@ footer#ry_footer{
 	footer#ry_footer{
 		background: url('../images/footer_md.png') no-repeat;
 		width:100%;
-		height: 357px;
-			background-position: center;
-	border:none;
-	background-color: white;
-	}
+		height: 357px;	}
 }
 
 /********** Extra small devices only **********/
@@ -327,12 +328,10 @@ footer#ry_footer{
 	#recycle_process, #recycle_plastic_fuel, #products_from_waste{
 		margin-top: 20px;
 	}
+	
 	footer#ry_footer{
 		background: url('../images/footer_md.png') no-repeat;
 		width:100%;
 		height: 150px;
-			background-position: center;
-	border:none;
-	background-color: white;
 	}
 }
