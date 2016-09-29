@@ -210,10 +210,15 @@ footer#ry_footer{
 	background-color: white;
 
 }
-
-footer#ry_footer > div{
+footer#ry_footer div{
+	text-align: center;
+}
+footer#ry_footer > div:first-child{
 	margin-top: 8%;
 	text-align: center;
+}
+footer#ry_footer div:nth-child(2){
+	margin-top: 2%;
 }
 
 footer#ry_footer > div button#contact_us{
