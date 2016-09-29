@@ -215,6 +215,17 @@ footer#ry_footer > div{
 	margin-top: 8%;
 	text-align: center;
 }
+
+footer#ry_footer > div button#contact_us{
+	background-color: #202020;
+	border-color: #009900;
+	text-transform: uppercase;
+	font-size: 1.2em;
+}
+footer#ry_footer > div button#contact_us2{
+	background-color: #009900;
+	font-size: 1.2em;
+}
 /* end footer */
 
 /* END HOME */
