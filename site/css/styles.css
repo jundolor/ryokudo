@@ -353,12 +353,7 @@ footer#ry_footer > div button#contact_us2{
 		background: url('../images/footer_md.png') no-repeat;
 		width:100%;
 		height: 150px;
+		font-size: 0.9em;
 	}
 
-	footer#ry_footer > div button#contact_us{
-		font-size: 1em;
-	}
-	footer#ry_footer > div button#contact_us2{
-		font-size: 1em;
-	}
 }
