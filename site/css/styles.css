@@ -275,6 +275,10 @@ footer#ry_footer > div button#contact_us2{
 		width: 25%;
 		font-size: 1.9em;
 	}
+	#middle_content{
+		margin-bottom: 20px;
+	}
+
 	footer#ry_footer{
 		background: url('../images/footer_md.png') no-repeat;
 		width:100%;
