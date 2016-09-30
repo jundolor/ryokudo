@@ -131,6 +131,14 @@ body {
 	height:0;
 	overflow:hidden;
 }
+#middle_content #learn_more1, #middle_content #learn_more2{
+	background-color: #333333;
+	border-color: #808080;
+}
+#middle_content #learn_more1:hover, #middle_content #learn_more2:hover{
+	background-color: #339900;
+	border-color: #66FF33;
+}
 
 .video-container iframe, .video-container object, .video-container embed {
 	position:absolute;
