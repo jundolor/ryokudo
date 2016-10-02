@@ -254,6 +254,23 @@ footer#ry_footer > div button#contact_us2{
 
 /* END HOME */
 
+/* START ABOUT */
+#about-ryokudo{
+	padding: 0;
+}
+#about-ryokudo h4.media-heading{
+	color: #339900;
+	text-transform: uppercase;
+}
+#about-ryokudo #myCarousel #carousel-banner-1 {
+	background: url('../images/aboutus_banner.png') no-repeat;
+	background-position: center;
+	width:1370px;
+	height: 408px;
+	border:1px outset #333333;
+}
+/* END ABOUT */
+
 /********** Extra Large devices only **********/
 @media (min-width: 1371px){
 	#carousel-banner-1, #carousel-banner-2, #carousel-banner-3, #carousel-banner-4{
