@@ -238,16 +238,18 @@ footer#ry_footer div:nth-child(2){
 	margin-top: 2%;
 }
 
-footer#ry_footer > div button#contact_us{
+footer#ry_footer > div button#contact_us, footer#ry_footer > div button#contact_us2{
 	background-color: #202020;
 	border-color: #009900;
 	text-transform: uppercase;
 	font-size: 1.2em;
 }
+/*
 footer#ry_footer > div button#contact_us2{
 	background-color: #009900;
 	font-size: 1.2em;
 }
+*/
 /* end footer */
 
 /* END HOME */
