@@ -1,3 +1,8 @@
+@font-face {
+    font-family: GlacialIndifferenceRegular;
+    src: url('../fonts/GlacialIndifference-Regular.otf');
+}
+
 body {
 /*  font-size: 16px;
   color: #fff;
@@ -110,9 +115,13 @@ body {
 /* End Carousel */
 
 /* start middle-content */
+#middle_content{
+	margin-bottom: 20px;
+}
 #middle_content h1{
 	text-shadow: 2px 2px 1px #B8B8B8;
 	text-transform: uppercase;
+	
 }
 #middle_content ol{
 	list-style-type: upper-alpha;
@@ -282,9 +291,6 @@ footer#ry_footer > div button#contact_us2{
 	.carousel-text1, .carousel-text2{
 		width: 25%;
 		font-size: 1.9em;
-	}
-	#middle_content{
-		margin-bottom: 20px;
 	}
 
 	footer#ry_footer{

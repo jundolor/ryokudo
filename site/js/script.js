@@ -33,6 +33,7 @@ $(function () { // Same as document.addEventListener("DOMContentLoaded"...
 var dc = {};
 
 var homeHtml = "snippets/home-snippet.html";
+var aboutHtml = "snippets/about.html";
 
 // Convenience function for inserting innerHTML for 'select'
 var insertHtml = function (selector, html) {
@@ -75,62 +76,75 @@ $ajaxUtils.sendGetRequest(
   
 });
 
+dc.loadAbout = function(){
+  showLoading("#main-content");
+  $ajaxUtils.sendGetRequest(
+    aboutHtml,
+    function (responseText) {
+      document.querySelector("#main-content")
+        .innerHTML = responseText;
+    },
+    false);
+}
+
 
 global.$dc = dc;
 
 })(window);
 
-  var recyle_process_switch = function(state){
-    img_switch(state, 'recycle_process');
+//functions here
 
-  };
+var recyle_process_switch = function(state){
+  img_switch(state, 'recycle_process');
 
-  var rpf_switch = function(state){
-    img_switch(state, 'recycle_plastic_fuel');
+};
 
-  };
+var rpf_switch = function(state){
+  img_switch(state, 'recycle_plastic_fuel');
 
-  var pfw_switch = function(state){
-    img_switch(state, 'products_from_waste');
+};
+
+var pfw_switch = function(state){
+  img_switch(state, 'products_from_waste');
+}
+
+var img_switch = function(state, source){
+  var selector = '';
+  var img_in = '';
+  var img_out = '';
+
+  if(source == 'recycle_process'){
+    selector = '#recycle_process';
+    img_in = 'recycle-02.png';
+    img_out = 'recycle-01.png';
+
+  }
+  else if(source == 'recycle_plastic_fuel'){
+    selector = '#recycle_plastic_fuel';
+    img_in = 'rpf-02.png';
+    img_out = 'rpf-01.png';   
+
+  }
+  else{
+    selector = '#products_from_waste';
+    img_in = 'prod-02.png';
+    img_out = 'prod-01.png';   
+
   }
 
-  var img_switch = function(state, source){
-    var selector = '';
-    var img_in = '';
-    var img_out = '';
 
-    if(source == 'recycle_process'){
-      selector = '#recycle_process';
-      img_in = 'recycle-02.png';
-      img_out = 'recycle-01.png';
-
-    }
-    else if(source == 'recycle_plastic_fuel'){
-      selector = '#recycle_plastic_fuel';
-      img_in = 'rpf-02.png';
-      img_out = 'rpf-01.png';   
-
-    }
-    else{
-      selector = '#products_from_waste';
-      img_in = 'prod-02.png';
-      img_out = 'prod-01.png';   
-
-    }
-
-
-    if(state == 'in'){
-      document.querySelector(selector + " h3").style.color = "#339900";
-      document.querySelector(selector + " > div").style.backgroundImage = "url('https://jundolor.github.io/ryokudo/site/images/" + img_in + "')";
-      document.querySelector(selector + " p").style.color = "#339900";
-      document.querySelector(selector + " p a").style.color = "#339900";
-      document.querySelector(selector).style.borderColor = "#339900";
-    }
-    else{
-      document.querySelector(selector + " h3").style.color = "#333333";
-      document.querySelector(selector + " > div").style.backgroundImage = "url('https://jundolor.github.io/ryokudo/site/images/" + img_out + "')";
-      document.querySelector(selector + " p").style.color = "#333333";
-      document.querySelector(selector + " p a").style.color = "#333333";
-      document.querySelector(selector).style.borderColor = "#333333";
-    }
-  };
+  if(state == 'in'){
+    document.querySelector(selector + " h3").style.color = "#339900";
+    document.querySelector(selector + " > div").style.backgroundImage = "url('https://jundolor.github.io/ryokudo/site/images/" + img_in + "')";
+    document.querySelector(selector + " p").style.color = "#339900";
+    document.querySelector(selector + " p a").style.color = "#339900";
+    document.querySelector(selector).style.borderColor = "#339900";
+  }
+  else{
+    document.querySelector(selector + " h3").style.color = "#333333";
+    document.querySelector(selector + " > div").style.backgroundImage = "url('https://jundolor.github.io/ryokudo/site/images/" + img_out + "')";
+    document.querySelector(selector + " p").style.color = "#333333";
+    document.querySelector(selector + " p a").style.color = "#333333";
+    document.querySelector(selector).style.borderColor = "#333333";
+  }
+};
