@@ -34,6 +34,7 @@ var dc = {};
 
 var homeHtml = "snippets/home-snippet.html";
 var aboutHtml = "snippets/about.html";
+var galleryHtml = "snippets/photo-gallery.html";
 
 // Convenience function for inserting innerHTML for 'select'
 var insertHtml = function (selector, html) {
@@ -80,6 +81,18 @@ dc.loadAbout = function(){
   showLoading("#main-content");
   $ajaxUtils.sendGetRequest(
     aboutHtml,
+    function (responseText) {
+      document.querySelector("#main-content")
+        .innerHTML = responseText;
+    },
+    false);
+}
+
+//galleryHtml
+dc.loadGallery = function(){
+  showLoading("#main-content");
+  $ajaxUtils.sendGetRequest(
+    galleryHtml,
     function (responseText) {
       document.querySelector("#main-content")
         .innerHTML = responseText;
@@ -148,3 +161,17 @@ var img_switch = function(state, source){
     document.querySelector(selector).style.borderColor = "#333333";
   }
 };
+
+var img_mod1 = function(img_id){
+  console.log(img_id);
+  var img = document.querySelector('#'+img_id);
+  console.log(img.src);
+  var modal = document.getElementById('myModal');
+  var modalImg = document.getElementById("img01");
+  console.log(modalImg);
+
+  var captionText = document.getElementById("caption");
+  modal.style.display = "block";
+  modalImg.src = img.src;
+  captionText.innerHTML = img.alt;
+}

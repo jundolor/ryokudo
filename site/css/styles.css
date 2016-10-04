@@ -13,6 +13,7 @@ body {
   font-size: 1.5em;
   color: #333333;
 }
+/* START HEADER */
 #header-nav{
 	background-color: white;
 	border-radius: 0;
@@ -78,6 +79,8 @@ body {
 #main-content{
   margin-top: 20px;
 }
+/* END HEADER */
+
 /* START HOME */
 /* Start Carousel */
 
@@ -219,8 +222,122 @@ body {
 	color: #333;
 }
 /* end home-tiles */
+/* END HOME */
 
-/* start footer*/
+/* START ABOUT */
+#about-ryokudo{
+	padding: 0;
+}
+#about-ryokudo h4.media-heading{
+	color: #339900;
+	text-transform: uppercase;
+}
+#about-ryokudo #myCarousel #carousel-banner-1 {
+	background: url('../images/aboutus_banner.png') no-repeat;
+	background-position: center;
+	width:1370px;
+	height: 408px;
+	border:1px outset #333333;
+}
+/* END ABOUT */
+
+/* START PHOTO-GALLERY */
+#photo-gallery{
+	width:60%;
+	margin-left: auto;
+	margin-right: auto;
+}
+/* Style the Image Used to Trigger the Modal */
+#modal-photo1, #modal-photo2, #modal-photo3, #modal-photo4, #modal-photo5, #modal-photo6, #modal-photo7, #modal-photo8 {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#modal-photo1:hover, #modal-photo2:hover, #modal-photo3:hover, #modal-photo4:hover, #modal-photo5:hover, #modal-photo6:hover, #modal-photo7:hover, #modal-photo8:hover {
+	opacity: 0.7;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption { 
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}
+/* END PHOTO-GALLERY */
+
+/* START FOOTER*/
 footer#ry_footer{
 	background-position: center;
 	border:none;
@@ -244,32 +361,7 @@ footer#ry_footer > div button#contact_us, footer#ry_footer > div button#contact_
 	text-transform: uppercase;
 	font-size: 1.2em;
 }
-/*
-footer#ry_footer > div button#contact_us2{
-	background-color: #009900;
-	font-size: 1.2em;
-}
-*/
-/* end footer */
-
-/* END HOME */
-
-/* START ABOUT */
-#about-ryokudo{
-	padding: 0;
-}
-#about-ryokudo h4.media-heading{
-	color: #339900;
-	text-transform: uppercase;
-}
-#about-ryokudo #myCarousel #carousel-banner-1 {
-	background: url('../images/aboutus_banner.png') no-repeat;
-	background-position: center;
-	width:1370px;
-	height: 408px;
-	border:1px outset #333333;
-}
-/* END ABOUT */
+/* END FOOTER */
 
 /********** Extra Large devices only **********/
 @media (min-width: 1371px){
