@@ -380,6 +380,13 @@ footer#ry_footer > div button#contact_us, footer#ry_footer > div button#contact_
 	#carousel-banner-1, #carousel-banner-2, #carousel-banner-3, #carousel-banner-4{
 		background:url('../images/homepage_banner_xlg.png') no-repeat;
 	}
+
+	#blog-main #myCarousel #carousel-banner-1 {
+		background: url('../images/blog_banner_xlg.png') no-repeat;
+		background-position: center;
+		width:100%;
+		height: 537px;
+	}
 }
 
 /********** Large devices only **********/
