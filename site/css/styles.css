@@ -257,7 +257,19 @@ body {
 #modal-photo1:hover, #modal-photo2:hover, #modal-photo3:hover, #modal-photo4:hover, #modal-photo5:hover, #modal-photo6:hover, #modal-photo7:hover, #modal-photo8:hover {
 	opacity: 0.7;
 }
+/* START BLOG MAIN */
+#blog-main{
+	padding: 0;
+}
 
+#blog-main #myCarousel #carousel-banner-1 {
+	background: url('../images/blog_banner.png') no-repeat;
+	background-position: center;
+	width:1370px;
+	height: 408px;
+	border:1px outset #333333;
+}
+/* END BLOG MAIN */
 /* The Modal (background) */
 .modal {
     display: none; /* Hidden by default */

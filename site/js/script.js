@@ -35,6 +35,7 @@ var dc = {};
 var homeHtml = "snippets/home-snippet.html";
 var aboutHtml = "snippets/about.html";
 var galleryHtml = "snippets/photo-gallery.html";
+var blogmainHtml = "snippets/blog-main.html";
 
 // Convenience function for inserting innerHTML for 'select'
 var insertHtml = function (selector, html) {
@@ -100,6 +101,17 @@ dc.loadGallery = function(){
     false);
 }
 
+//
+dc.loadBlogmain = function(){
+  showLoading("#main-content");
+  $ajaxUtils.sendGetRequest(
+    blogmainHtml,
+    function (responseText) {
+      document.querySelector("#main-content")
+        .innerHTML = responseText;
+    },
+    false);
+}
 
 global.$dc = dc;
 
