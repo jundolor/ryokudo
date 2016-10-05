@@ -3,6 +3,11 @@
     src: url('../fonts/GlacialIndifference-Regular.otf');
 }
 
+@font-face {
+    font-family: GlacialIndifferenceBold;
+    src: url('../fonts/GlacialIndifference-Bold.otf');
+}
+
 body {
 /*  font-size: 16px;
   color: #fff;
@@ -12,6 +17,12 @@ body {
   font-style: normal; 
   font-size: 1.5em;
   color: #333333;
+}
+strong{
+	font-family: 'GlacialIndifferenceBold';
+}
+.standard_green{
+	color: #339900;
 }
 /* START HEADER */
 #header-nav{
@@ -268,6 +279,63 @@ body {
 	width:1370px;
 	height: 408px;
 	border:1px outset #333333;
+}
+
+#blog-main div#blog-main-content{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#blog-main div#blog-main-content h1, #blog-main div#blog-main-content h2, #blog-main div#blog-main-content h3, #blog-main div#blog-main-content h4{
+	font-family: 'GlacialIndifferenceBold';
+}
+
+#blog-main div#blog-main-content div.blog-col, #blog-list{
+	padding: 10px;
+}
+
+#blog-main div#blog-main-content div.blog-col div#blog-exerpt1, #blog-main div#blog-main-content div div#blog-exerpt2{
+	padding: 10px;
+	border:1px #333333 solid;
+}
+
+#blog-main div#blog-main-content div.blog-img{
+	width: 100%;
+	height:170px;
+	padding: 0;
+}
+
+div#blog-exerpt1 .blog-img{
+	background: url('../images/blog_jac.png') no-repeat;
+	background-position: center;
+
+}
+
+div#blog-exerpt2 .blog-img{
+	background: url('../images/blog_messy.png') no-repeat;
+	background-position: center;
+
+}
+#read_more1a, #read_more2a{
+	margin-right: 3px;
+}
+div#blog-exerpt1 #read_more1a, div#blog-exerpt1 #read_more1b, div#blog-exerpt2 #read_more2a, div#blog-exerpt2 #read_more2b{
+	background-color: #333333;
+	border-color: #808080;
+	border-radius: 1px;
+}
+div#blog-exerpt1 #read_more1a:hover, div#blog-exerpt1 #read_more1b:hover, div#blog-exerpt2 #read_more2a:hover, div#blog-exerpt2 #read_more2b:hover{
+	background-color: #339900;
+	border-color: #66FF33;
+}
+
+div#blog-main-content div.date-posted{
+	background-color: #D0D0D0;
+	padding: 4px;
+	text-align: right;
+}
+div#blog-list h2{
+	text-transform: uppercase;
 }
 /* END BLOG MAIN */
 /* The Modal (background) */
