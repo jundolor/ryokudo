@@ -195,6 +195,7 @@ div#home-carousel div#myCarousel div.carousel-inner{
 }
 
 #home-tiles-inner div h3{
+	font-family: 'GlacialIndifferenceBold';
 	text-transform: capitalize;
 	margin-top: 10px;
 	text-align: center;
@@ -261,6 +262,10 @@ div#home-carousel div#myCarousel div.carousel-inner{
 	height: 408px;
 	border:1px outset #333333;
 }
+#about-ryokudo h1{
+	text-shadow: 2px 2px 1px #B8B8B8;
+}
+
 /* END ABOUT */
 
 /* START PHOTO-GALLERY */
@@ -279,6 +284,10 @@ div#home-carousel div#myCarousel div.carousel-inner{
 #modal-photo1:hover, #modal-photo2:hover, #modal-photo3:hover, #modal-photo4:hover, #modal-photo5:hover, #modal-photo6:hover, #modal-photo7:hover, #modal-photo8:hover {
 	opacity: 0.7;
 }
+#photo-gallery h1{
+	text-shadow: 2px 2px 1px #B8B8B8;
+}
+/* END PHOTO-GALLERY */
 /* START BLOG MAIN */
 #blog-main{
 	padding: 0;
