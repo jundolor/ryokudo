@@ -90,6 +90,13 @@ strong{
 #main-content{
   margin-top: 20px;
 }
+li#navHomeButton.active a,
+li#navAboutButton.active a,
+li#navBlogButton.active a,
+li#navGalleryButton.active a{
+	background-color: white;
+	color: #339900;
+}
 /* END HEADER */
 
 /* START HOME */
@@ -103,9 +110,13 @@ strong{
   padding-right: 0;
   padding-left: 0;
 }
-#carousel-banner-1, #carousel-banner-2, #carousel-banner-3, #carousel-banner-4{
+div#home-carousel div#myCarousel div.carousel-inner{
 	background: url('../images/homepage_banner.png') no-repeat;
 	background-position: center;
+}
+#carousel-banner-1, #carousel-banner-2, #carousel-banner-3, #carousel-banner-4{
+	/*background: url('../images/homepage_banner.png') no-repeat;
+	background-position: center;*/
 }
 .carousel-text1, .carousel-text2{
 	font-weight: normal;
@@ -463,7 +474,23 @@ footer#ry_footer > div button#contact_us, footer#ry_footer > div button#contact_
 /********** Extra Large devices only **********/
 @media (min-width: 1371px){
 	#carousel-banner-1, #carousel-banner-2, #carousel-banner-3, #carousel-banner-4{
-		background:url('../images/homepage_banner_xlg.png') no-repeat;
+		/*background:url('../images/homepage_banner_xlg.png') no-repeat;*/
+	}
+
+	#carousel-banner-1, #carousel-banner-2, #carousel-banner-3, #carousel-banner-4{
+		width:100%;
+		height: 550px;
+	}
+
+	div#home-carousel div#myCarousel div.carousel-inner{
+		background: url('../images/homepage_banner_xlg.png') no-repeat;
+		background-position: center;
+	}
+
+	#about-ryokudo #myCarousel #carousel-banner-1 {
+		background: url('../images/aboutus_banner_xlg.png') no-repeat;
+		background-position: center;
+		width:100%;
 	}
 
 	#blog-main #myCarousel #carousel-banner-1 {
@@ -471,6 +498,10 @@ footer#ry_footer > div button#contact_us, footer#ry_footer > div button#contact_
 		background-position: center;
 		width:100%;
 		height: 537px;
+	}
+
+	#about-ryokudo #myCarousel #carousel-banner-1 {
+		width:100%;
 	}
 }
 

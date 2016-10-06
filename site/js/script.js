@@ -66,12 +66,14 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
 
 // On first load, show home view
+switch_menu("#navHomeButton");
 showLoading("#main-content");
 $ajaxUtils.sendGetRequest(
   homeHtml,
   function (responseText) {
     document.querySelector("#main-content")
       .innerHTML = responseText;
+
   },
   false);
 
@@ -79,6 +81,7 @@ $ajaxUtils.sendGetRequest(
 });
 
 dc.loadAbout = function(){
+  switch_menu("#navAboutButton");
   showLoading("#main-content");
   $ajaxUtils.sendGetRequest(
     aboutHtml,
@@ -91,6 +94,7 @@ dc.loadAbout = function(){
 
 //galleryHtml
 dc.loadGallery = function(){
+  switch_menu("#navGalleryButton");
   showLoading("#main-content");
   $ajaxUtils.sendGetRequest(
     galleryHtml,
@@ -103,6 +107,7 @@ dc.loadGallery = function(){
 
 //
 dc.loadBlogmain = function(){
+  switch_menu("#navBlogButton");
   showLoading("#main-content");
   $ajaxUtils.sendGetRequest(
     blogmainHtml,
@@ -118,6 +123,25 @@ global.$dc = dc;
 })(window);
 
 //functions here
+
+var switch_menu = function(menu){
+  clear_menu_active("#navHomeButton");
+  clear_menu_active("#navAboutButton");
+  clear_menu_active("#navBlogButton");
+  clear_menu_active("#navGalleryButton");
+
+  classes = document.querySelector(menu).className;
+  if (classes.indexOf("active") == -1) {
+    classes += " active";
+    document.querySelector(menu).className = classes;
+  }
+}
+
+var clear_menu_active = function(menu){
+  var classes = document.querySelector(menu).className;
+  classes = classes.replace(new RegExp("active", "g"), "");
+  document.querySelector(menu).className = classes;
+}
 
 var recyle_process_switch = function(state){
   img_switch(state, 'recycle_process');
