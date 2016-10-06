@@ -15,7 +15,7 @@ $(function () { // Same as document.addEventListener("DOMContentLoaded"...
   // Refer to issue #28 in the repo.
   // Solution: force focus on the element that the click event fired on
   $("#navbarToggle").click(function (event) {
-    alert("clicked 1");
+    //alert("clicked 1");
     $(event.target).focus();
   });
 
