@@ -617,6 +617,10 @@ footer#ry_footer > div button#contact_us:hover, footer#ry_footer > div button#co
 		width:767px;
 		height: 308px;
 	}
+	div#home-carousel div#myCarousel div.carousel-inner{
+		background: url('../images/homepage_banner_xsm.png') no-repeat;
+		background-position: center;
+	}
 	.carousel-text1, .carousel-text2{
 		width: 22%;
 		font-size: 1.5em;
