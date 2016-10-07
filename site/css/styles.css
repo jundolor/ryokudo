@@ -260,7 +260,7 @@ div#home-carousel div#myCarousel div.carousel-inner{
 	background-position: center;
 	width:1370px;
 	height: 408px;
-	border:1px outset #333333;
+	/*border:1px outset #333333;*/
 }
 #about-ryokudo h1{
 	text-shadow: 2px 2px 1px #B8B8B8;
@@ -637,11 +637,11 @@ footer#ry_footer > div button#contact_us:hover, footer#ry_footer > div button#co
 		width: 30%;
 	}
 	#about-ryokudo #myCarousel #carousel-banner-1 {
-	background: url('../images/aboutus_banner_sml.png') no-repeat;
-	background-position: center;
-	width:767px;
-	height: 228px;
-}
+		background: url('../images/aboutus_banner_sml.png') no-repeat;
+		background-position: center;
+		width:767px;
+		height: 228px;
+	}
 	#recycle_process, #recycle_plastic_fuel, #products_from_waste{
 		margin-top: 20px;
 	}
