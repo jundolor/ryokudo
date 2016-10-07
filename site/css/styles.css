@@ -43,7 +43,7 @@ strong{
 #buttom-bar-right{
 	width: 250px;
 	height: inherit;;
-	background-color: #006633;
+	background-color: #336600;
 }
 
 .navbar{
@@ -473,11 +473,17 @@ footer#ry_footer div:nth-child(2){
 }
 
 footer#ry_footer > div button#contact_us, footer#ry_footer > div button#contact_us2{
-	background-color: #202020;
-	border-color: #009900;
+	background-color: #333333;
+	border-color: #808080;
 	text-transform: uppercase;
 	font-size: 1.2em;
 }
+
+footer#ry_footer > div button#contact_us:hover, footer#ry_footer > div button#contact_us2:hover{
+	background-color: #339900;
+	border-color: #66FF33;
+}
+
 /* END FOOTER */
 
 /********** Extra Large devices only **********/
