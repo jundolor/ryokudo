@@ -298,7 +298,7 @@ div#home-carousel div#myCarousel div.carousel-inner{
 	background-position: center;
 	width:1370px;
 	height: 408px;
-	border:1px outset #333333;
+	/*border:1px outset #333333;*/
 }
 
 #blog-main div#blog-main-content{
