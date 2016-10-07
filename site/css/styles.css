@@ -636,6 +636,12 @@ footer#ry_footer > div button#contact_us:hover, footer#ry_footer > div button#co
 		left:70%;
 		width: 30%;
 	}
+	#about-ryokudo #myCarousel #carousel-banner-1 {
+	background: url('../images/aboutus_banner_sml.png') no-repeat;
+	background-position: center;
+	width:767px;
+	height: 228px;
+}
 	#recycle_process, #recycle_plastic_fuel, #products_from_waste{
 		margin-top: 20px;
 	}
