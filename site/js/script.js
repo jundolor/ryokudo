@@ -143,6 +143,48 @@ var clear_menu_active = function(menu){
   document.querySelector(menu).className = classes;
 }
 
+function home_tiles(state, selector, img_in, img_out){
+  this.state = state;
+  this.selector = selector;
+  this.img_in = img_in;
+  this.img_out = img_out;
+}
+
+home_tiles.prototype.img_switch =function(){
+  if(this.state == 'in'){
+    document.querySelector(this.selector + " h3").style.color = "#339900";
+    document.querySelector(this.selector + " > div").style.backgroundImage = "url('https://jundolor.github.io/ryokudo/site/images/" + this.img_in + "')";
+    document.querySelector(this.selector + " p").style.color = "#339900";
+    document.querySelector(this.selector + " p a").style.color = "#339900";
+    document.querySelector(this.selector).style.borderColor = "#339900";
+  }
+  else{
+    document.querySelector(this.selector + " h3").style.color = "#333333";
+    document.querySelector(this.selector + " > div").style.backgroundImage = "url('https://jundolor.github.io/ryokudo/site/images/" + this.img_out + "')";
+    document.querySelector(this.selector + " p").style.color = "#333333";
+    document.querySelector(this.selector + " p a").style.color = "#333333";
+    document.querySelector(this.selector).style.borderColor = "#333333";
+  }
+}
+
+var recyle_process_switch = function(state){
+  var obj_recycle_process = new home_tiles(state, '#recycle_process', 'recycle-02.png', 'recycle-01.png');
+
+  obj_recycle_process.img_switch();
+}
+
+var rpf_switch = function(state){ 
+  var obj_rpf_switch = new home_tiles(state, '#recycle_plastic_fuel', 'rpf-02.png', 'rpf-01.png');
+
+  obj_rpf_switch.img_switch();
+}
+
+var pfw_switch = function(state){
+  var obj_pfw_switch = new home_tiles(state, '#products_from_waste', 'prod-02.png', 'prod-01.png');
+
+  obj_pfw_switch.img_switch();
+}
+/*
 var recyle_process_switch = function(state){
   img_switch(state, 'recycle_process');
 
@@ -197,7 +239,9 @@ var img_switch = function(state, source){
     document.querySelector(selector).style.borderColor = "#333333";
   }
 };
+*/
 
+//modals
 var img_mod1 = function(img_id){
   console.log(img_id);
   var img = document.querySelector('#'+img_id);
